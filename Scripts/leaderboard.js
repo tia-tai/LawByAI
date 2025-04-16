@@ -87,7 +87,7 @@ const loadLeaderboard = async () => {
       if (entry.Share === true) {
         row.style.cursor = "pointer";
         row.addEventListener("click", () => {
-          window.location.href = `/sample.html?id=${entry.id}`;
+          window.location.href = `LawByAI/sample.html?id=${entry.id}`;
         });
       }
 
@@ -111,7 +111,7 @@ const loadLeaderboard = async () => {
       if (userEntry.Share === true) {
         row.style.cursor = "pointer";
         row.addEventListener("click", () => {
-          window.location.href = `/sample.html?id=${userEntry.id}`;
+          window.location.href = `LawByAI/sample.html?id=${userEntry.id}`;
         });
       }
 
