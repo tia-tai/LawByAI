@@ -42,8 +42,18 @@ window.addEventListener("load", () => {
 
 const loadLeaderboard = async () => {
   try {
-    const ipResponse = await fetch("https://api.ipify.org?format=json");
-    const { ip: userIP } = await ipResponse.json();
+    let ip = "";
+
+    const response6 = await fetch("https://api64.ipify.org?format=json");
+    const data6 = await response6.json();
+
+    if (data6.ip) {
+      ip = data6.ip;
+    } else {
+      const response = await fetch("https://api.ipify.org?format=json");
+      const data = await response.json();
+      ip = data.ip;
+    }
 
     const now = new Date();
 
@@ -72,7 +82,7 @@ const loadLeaderboard = async () => {
       data.rank = currentRank++;
 
       if (data.rank <= 10) leaderboardData.push(data);
-      if (data.IP === userIP) userEntry = data;
+      if (data.IP === ip) userEntry = data;
     });
 
     leaderboardData.forEach((entry) => {
@@ -87,7 +97,7 @@ const loadLeaderboard = async () => {
       if (entry.Share === true) {
         row.style.cursor = "pointer";
         row.addEventListener("click", () => {
-          window.location.href = `sample.html?id=${entry.id}`;
+          window.location.href = `/sample.html?id=${entry.id}`;
         });
       }
 
@@ -111,7 +121,7 @@ const loadLeaderboard = async () => {
       if (userEntry.Share === true) {
         row.style.cursor = "pointer";
         row.addEventListener("click", () => {
-          window.location.href = `sample.html?id=${userEntry.id}`;
+          window.location.href = `/sample.html?id=${userEntry.id}`;
         });
       }
 
