@@ -71,7 +71,7 @@ window.sendMessage = async function () {
 
     try {
       const genAI = new GoogleGenerativeAI(
-        secrets.GEMINI_API_KEY
+        "AIzaSyAm6dOUWqVzfDnnWPWgBwtERjkLT44ekYQ"
       );
       const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
 
