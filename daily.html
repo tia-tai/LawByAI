@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/base.css" />
+    <link rel="stylesheet" href="CSS/daily.css" />
+    <title>Law By AI Daily Challenge</title>
+  </head>
+  <body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+      <div class="logo-spinner-wrapper">
+        <img src="Images/lawbyai.jpg" alt="Loading Logo" class="loading-logo" />
+        <div class="spinner-orbit"></div>
+        <h1 class="loading-text">Daily</h1>
+      </div>
+    </div>
+
+    <div class="ShareScreen" id="ShareScreen">
+      <h1>CONGRATULATIONS!!</h1>
+      <p>Fill this form to appear on the leaderboard!</p>
+      <form id="shareForm">
+        <label for="name">Username:</label><br />
+        <input type="text" id="name" name="name" /><br /><br />
+
+        <input type="checkbox" id="agree" name="agree" required />
+        <label for="agree">I agree to share</label><br /><br />
+
+        <input type="submit" value="Submit" />
+        <button
+          type="button"
+          class="cancel-btn"
+          onclick="document.getElementById('ShareScreen').style.display='none'"
+        >
+          Cancel
+        </button>
+      </form>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content" id="mainContent">
+      <div class="chat-container">
+        <div class="header">
+          <button
+            class="back-button"
+            onclick="window.location.href='home.html';"
+          >
+            &#8592; Back
+          </button>
+        </div>
+        <div class="messages" id="messages"></div>
+        <div class="input-container">
+          <input type="text" id="userInput" placeholder="Type a message..." />
+          <button onclick="sendMessage()">Send</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="Scripts/daily.js"></script>
+  <script type="module" src="Scripts/database.js"></script>
+</html>

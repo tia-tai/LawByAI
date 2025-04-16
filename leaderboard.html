@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/base.css" />
+    <link rel="stylesheet" href="CSS/leaderboard.css" />
+    <title>Law By AI Leaderboard</title>
+  </head>
+  <body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+      <div class="logo-spinner-wrapper">
+        <img src="Images/lawbyai.jpg" alt="Loading Logo" class="loading-logo" />
+        <div class="spinner-orbit"></div>
+        <h1 class="loading-text">Leaderboard</h1>
+      </div>
+    </div>
+
+    <div class="header">
+      <button class="back-button" onclick="window.location.href='home.html';">
+        &#8592; Back
+      </button>
+    </div>
+    <div class="leaderboard-container" id="mainContent" style="display: none">
+      <h1>🏆 Leaderboard</h1>
+      <table id="leaderboard">
+        <thead>
+          <tr>
+            <th>Rank</th>
+            <th>Username</th>
+            <th>Score</th>
+          </tr>
+        </thead>
+        <tbody id="leaderboardBody">
+          <!-- Entries will be added here -->
+        </tbody>
+      </table>
+    </div>
+
+    <script type="module" src="Scripts/leaderboard.js"></script>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/base.css" />
+    <link rel="stylesheet" href="CSS/freeplay.css" />
+    <title>Law By AI Playground</title>
+  </head>
+  <body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+      <div class="logo-spinner-wrapper">
+        <img src="Images/lawbyai.jpg" alt="Loading Logo" class="loading-logo" />
+        <div class="spinner-orbit"></div>
+        <h1 class="loading-text">Freeplay</h1>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content" id="mainContent">
+      <div class="chat-container">
+        <div class="header">
+          <button
+            class="back-button"
+            onclick="window.location.href='home.html';"
+          >
+            &#8592; Back
+          </button>
+        </div>
+        <div class="messages" id="messages"></div>
+        <div class="input-container">
+          <input
+            type="text"
+            id="userInput"
+            maxlength="200"
+            placeholder="Type a message..."
+          />
+          <span id="charCount">0 / 200</span>
+          <button onclick="sendMessage()">Send</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="Scripts/freeplay.js"></script>
+  <script type="module" src="Scripts/aiResponse.js"></script>
+</html>

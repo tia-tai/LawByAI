@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/base.css" />
+    <link rel="stylesheet" href="CSS/replay.css" />
+    <title>Law By AI Sample</title>
+  </head>
+  <body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+      <div class="logo-spinner-wrapper">
+        <img src="Images/lawbyai.jpg" alt="Loading Logo" class="loading-logo" />
+        <div class="spinner-orbit"></div>
+        <h1 class="loading-text">Replay</h1>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content" id="mainContent">
+      <div class="chat-container">
+        <div class="header">
+          <button
+            class="back-button"
+            onclick="window.location.href='leaderboard.html';"
+          >
+            &#8592; Back
+          </button>
+          <div id="userInfo" class="user-info"></div>
+        </div>
+        <div class="messages" id="messages"></div>
+      </div>
+    </div>
+  </body>
+  <script type="module" src="Scripts/replay.js"></script>
+</html>

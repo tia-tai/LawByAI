@@ -1,0 +1,102 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* Loading Screen */
+.loading-screen {
+  height: 100vh;
+  width: 100vw;
+  background-color: #2e294e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo-spinner-wrapper {
+  position: relative;
+  width: 600px;
+  height: 600px;
+}
+.loading-logo {
+  width: 100%;
+  height: auto;
+  border-radius: 300px;
+  z-index: 1;
+  position: relative;
+}
+.spinner-orbit {
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border-radius: 50%;
+  animation: orbit 2.8s linear infinite;
+}
+@keyframes orbit {
+  0% {
+    transform: rotate(0deg) translate(100%, -330px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translate(100%, -330px) rotate(-360deg);
+  }
+}
+
+/* NEW HOMEPAGE DESIGN */
+.welcome-heading {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -110px);
+  color: white;
+  font-size: 70px;
+  font-weight: bold;
+  text-align: center;
+  z-index: 3;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.home-wrapper {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: #7776bc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.scales-container {
+  position: relative;
+  height: 70vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.home-image {
+  height: 175%;
+  width: auto;
+}
+.click-zone {
+  position: absolute;
+  z-index: 2;
+  cursor: pointer;
+}
+.daily-zone {
+  top: 64vh;
+  left: 50vw;
+  width: 16vw;
+  height: 19vh;
+}
+.free-zone {
+  top: 48.5vh;
+  right: 32.5vw;
+  width: 14.8vw;
+  height: 17.5vh;
+}
