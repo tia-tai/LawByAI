@@ -16,7 +16,7 @@ import {
 import { GoogleGenerativeAI } from "https://cdn.jsdelivr.net/npm/@google/generative-ai/+esm";
 
 const firebaseConfig = {
-  apiKey: secrets.FIRESTORE_API_KEY,
+  apiKey: "AIzaSyBKJT-A3KHH_hoJV-6-84mO3vJ3Rh4wzW4",
   authDomain: "iste-d7d9f.firebaseapp.com",
   projectId: "iste-d7d9f",
   storageBucket: "iste-d7d9f.firebasestorage.app",
@@ -373,7 +373,7 @@ window.sendMessage = async function () {
       response = getTodaysPrompt();
     } else {
       const genAI = new GoogleGenerativeAI(
-        secrets.GEMINI_API_KEY
+        "AIzaSyAm6dOUWqVzfDnnWPWgBwtERjkLT44ekYQ"
       );
       const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
 
