@@ -53,8 +53,18 @@ const createSampleData = (ip) => {
 };
 
 document.addEventListener("DOMContentLoaded", async function () {
-  const response = await fetch("https://api.ipify.org?format=json");
-  const data = await response.json();
+  let ip = "";
+
+  const response6 = await fetch("https://api64.ipify.org?format=json");
+  const data6 = await response6.json();
+
+  if (data6.ip) {
+    ip = data6.ip;
+  } else {
+    const response = await fetch("https://api.ipify.org?format=json");
+    const data = await response.json();
+    ip = data.ip;
+  }
 
   // Query for existing document with that IP
   const leaderboardRef = collection(db, "leaderboard");
@@ -74,22 +84,32 @@ document.addEventListener("DOMContentLoaded", async function () {
     leaderboardRef,
     where("Date", ">=", startTimestamp),
     where("Date", "<", endTimestamp),
-    where("IP", "==", data.ip)
+    where("IP", "==", ip)
   );
   const querySnapshot = await getDocs(q);
 
   if (!querySnapshot.empty) {
-    window.location.href = "leaderboard.html";
+    window.location.href = "/leaderboard.html";
   }
 });
 
 const addDataToFirestore = async () => {
   try {
     // Fetch the IP address
-    const response = await fetch("https://api.ipify.org?format=json");
-    const data = await response.json();
+    let ip = "";
 
-    const docData = createSampleData(data.ip);
+    const response6 = await fetch("https://api64.ipify.org?format=json");
+    const data6 = await response6.json();
+
+    if (data6.ip) {
+      ip = data6.ip;
+    } else {
+      const response = await fetch("https://api.ipify.org?format=json");
+      const data = await response.json();
+      ip = data.ip;
+    }
+
+    const docData = createSampleData(ip);
 
     // Add the document to Firestore
     const docRef = await addDoc(collection(db, "leaderboard"), docData);
@@ -478,5 +498,5 @@ document
     if (Object.keys(updateData).length > 0) {
       updateFirestoreData(docID, updateData);
     }
-    window.location.href = "leaderboard.html";
+    window.location.href = "/leaderboard.html";
   });
