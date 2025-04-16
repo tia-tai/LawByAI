@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", async function () {
   const querySnapshot = await getDocs(q);
 
   if (!querySnapshot.empty) {
-    window.location.href = "/LawByAI/leaderboard.html";
+    window.location.href = "/leaderboard.html";
   }
 });
 
@@ -478,5 +478,5 @@ document
     if (Object.keys(updateData).length > 0) {
       updateFirestoreData(docID, updateData);
     }
-    window.location.href = "/LawByAI/leaderboard.html";
+    window.location.href = "/leaderboard.html";
   });
