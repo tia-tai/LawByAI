@@ -308,6 +308,78 @@ A week later, you receive a letter from an attorney representing the couple, sta
 What do you do?`,
     date: "2025-04-21",
   },
+  {
+    prompt: `You're a freelance journalist based in Washington state. You recently wrote an investigative piece on a local government official’s alleged misconduct, relying heavily on anonymous sources. The article goes viral, and soon you receive a subpoena demanding you reveal your sources in a defamation lawsuit filed by the official.
+
+You're worried about legal consequences if you don’t comply, but revealing the sources could destroy your credibility—and their lives.
+
+What do you do?`,
+    date: "2025-04-22",
+  },
+  {
+    prompt: `You’re an Uber driver in Nevada. One evening, a passenger leaves a backpack in your car. You try contacting them via the app, but get no response. Later, you open the bag to look for ID and find what appears to be a large amount of cash and a suspicious white powder.
+
+Before you can decide what to do, someone starts messaging you from a blocked number asking for the bag back—no questions asked.
+
+What do you do?`,
+    date: "2025-04-23",
+  },
+  {
+    prompt: `You're a schoolteacher in Georgia, and one of your students confides in you about witnessing something potentially criminal at home. You’re concerned for their safety, but they beg you not to tell anyone, fearing things will get worse.
+
+You’re unsure whether this qualifies as mandated reporting under state law, and your principal advises you to “wait and see.”
+
+What do you do?`,
+    date: "2025-04-24",
+  },
+  {
+    prompt: `You’re a dog walker in Colorado and recently posted videos of your clients’ dogs doing tricks on your TikTok. One of your videos goes viral, gaining sponsorship offers. But a client contacts you angrily, saying you never got their consent to post footage of their dog and that you’re using their pet for personal gain.
+
+They’re threatening to sue unless you take it down and split the revenue.
+
+What do you do?`,
+    date: "2025-04-25",
+  },
+  {
+    prompt: `You’re a barista in a busy Los Angeles café. One day, a regular customer leaves behind a flash drive. You plug it into the café’s computer to check for contact info and accidentally discover confidential corporate documents that seem to implicate a major company in environmental violations.
+
+You’re torn between returning the drive quietly or going public.
+
+What do you do?`,
+    date: "2025-04-26",
+  },
+  {
+    prompt: `You run a fitness coaching business in Pennsylvania, offering virtual classes. A client claims they were injured while following your workout and is demanding compensation. You had them sign a digital waiver, but they argue it’s unenforceable because it wasn’t notarized or clearly worded.
+
+They’re threatening legal action unless you settle.
+
+What do you do?`,
+    date: "2025-04-27",
+  },
+  {
+    prompt: `You work part-time at a retail store in Michigan. One day, your manager asks you to clock in a co-worker who’s running late, saying “it’s no big deal.” You do it, but later, the HR department finds out and you’re the one under investigation for timesheet fraud.
+
+You explain the situation, but they say policy is policy.
+
+What do you do?`,
+    date: "2025-04-28",
+  },
+  {
+    prompt: `You’re a makeup artist in North Carolina with a popular Instagram following. A beauty brand sends you free products and asks you to post positive reviews, but never mentions a contract or payment. You post a glowing review—and weeks later find out the product is being recalled due to a harmful ingredient.
+
+Now followers are blaming you, and the brand has ghosted you.
+
+What do you do?`,
+    date: "2025-04-29",
+  },
+  {
+    prompt: `You’re a grad student in Massachusetts researching AI ethics. You find an internal document from a major tech company online that wasn’t meant for public release. It contains data that could be groundbreaking for your thesis—and damaging to the company.
+
+Publishing it could spark important debate, but you’re unsure about the legal risks of using or citing it.
+
+What do you do?`,
+    date: "2025-04-30",
+  },
 ];
 
 function getTodaysPrompt() {
