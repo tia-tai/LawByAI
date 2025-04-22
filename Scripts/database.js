@@ -52,46 +52,7 @@ const createSampleData = (ip) => {
   };
 };
 
-document.addEventListener("DOMContentLoaded", async function () {
-  let ip = "";
 
-  const response6 = await fetch("https://api64.ipify.org?format=json");
-  const data6 = await response6.json();
-
-  if (data6.ip) {
-    ip = data6.ip;
-  } else {
-    const response = await fetch("https://api.ipify.org?format=json");
-    const data = await response.json();
-    ip = data.ip;
-  }
-
-  // Query for existing document with that IP
-  const leaderboardRef = collection(db, "leaderboard");
-
-  const now = new Date();
-
-  // Get start of today
-  const start = new Date(now.getFullYear(), now.getMonth(), now.getDate());
-
-  // Get start of tomorrow
-  const end = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1);
-
-  const startTimestamp = Timestamp.fromDate(start);
-  const endTimestamp = Timestamp.fromDate(end);
-
-  const q = query(
-    leaderboardRef,
-    where("Date", ">=", startTimestamp),
-    where("Date", "<", endTimestamp),
-    where("IP", "==", ip)
-  );
-  const querySnapshot = await getDocs(q);
-
-  if (!querySnapshot.empty) {
-    window.location.href = "leaderboard.html";
-  }
-});
 
 const addDataToFirestore = async () => {
   try {
