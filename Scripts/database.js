@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded", async function () {
   const querySnapshot = await getDocs(q);
 
   if (!querySnapshot.empty) {
-    window.location.href = "/leaderboard.html";
+    window.location.href = "leaderboard.html";
   } else {
     let messages = document.getElementById("messages");
     let Message = document.createElement("div");
