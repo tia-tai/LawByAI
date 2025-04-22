@@ -1,5 +1,19 @@
 import { GoogleGenerativeAI } from "https://cdn.jsdelivr.net/npm/@google/generative-ai/+esm";
 
+document.addEventListener("DOMContentLoaded", async function () {
+  let messages = document.getElementById("messages");
+  let Message = document.createElement("div");
+  Message.classList.add("bot");
+  Message.textContent = `Welcome to Free Play! Read the AI's prompt and craft the best response. Find the best scenario in the least amount of responses and shoot for the highest score! 
+
+Type 'hello' to get started!
+Type 'reset' to reset the system between rounds!`;
+  messages.appendChild(Message);
+
+  input.value = "";
+  messages.scrollTop = messages.scrollHeight;
+});
+
 function containsEvaluation(text) {
   const evaluationRegex = /Score/i;
   return evaluationRegex.test(text);
