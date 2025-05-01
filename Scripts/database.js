@@ -258,140 +258,231 @@ function extractScoreValues(text) {
 
 const weeklyPrompts = [
   {
-    prompt: `You’re a freelance graphic designer in Texas, and business has been good lately. One day, a startup client asks if you can design promotional graphics for their new product. They send over a few images they want incorporated into the work—some of which feature a celebrity wearing the product. You complete the project, they pay you, and the client publishes the designs across their social media.
+    prompt: `You’re a freelance web developer in Missouri. A client hires you to redesign their e-commerce site. While reviewing their backend, you discover they've stored customer passwords in plain text and are violating basic data security protocols. You warn them, but they refuse to fix it, saying it’s too expensive.
 
-Two weeks later, you receive a cease-and-desist letter from the celebrity’s legal team. They’re claiming unauthorized use of their likeness for commercial purposes and are threatening to sue for misappropriation of identity. You contact the client, but they’ve gone silent. You're now worried you could be held legally responsible.
-
-What do you do next?`,
-    date: "2025-04-15",
-  },
-  {
-    prompt: `You're driving through Arizona on a road trip with a friend. It’s late, you're both tired, and you spot an empty rest area. Your friend suggests pulling over to sleep in the car for a few hours. You agree and park in a well-lit corner of the lot. Around 2 AM, a police officer knocks on your window. He says sleeping in your car is “suspicious,” asks for your ID, and starts questioning you about where you’re going and whether there are any drugs or weapons in the car.
-
-Then he asks if he can search the vehicle. You’re confident you haven’t done anything wrong and want to get this over with quickly.
+You worry that staying silent makes you complicit—and that your name is on the project.
 
 What do you do?`,
-    date: "2025-04-16",
+    date: "2025-05-01",
   },
   {
-    prompt: `You run a popular YouTube channel based in California that does gadget reviews. One day, you get a leaked prototype of a smartphone from an anonymous viewer who mails it to your P.O. box. You unbox and review the device in a video, which quickly goes viral.
+    prompt: `You're a nurse in Ohio working at a private clinic. A patient confides that they’re undocumented and afraid to seek further medical care. Your supervisor later asks for that patient’s file “for reporting purposes,” but you suspect it’s related to their immigration status—not medical care.
 
-A few days later, you receive a legal notice from the tech company demanding you take down the video and return the prototype. They claim the phone was stolen property and that your possession and publication of it constitutes unlawful handling of stolen goods and misappropriation of trade secrets.
-
-You didn’t know it was stolen, and the anonymous sender gave no info. But you’re now being warned of potential civil and criminal liability.
+You fear they’ll be reported if you comply.
 
 What do you do?`,
-    date: "2025-04-17",
+    date: "2025-05-02",
   },
   {
-    prompt: `You work remotely as a software developer in Florida. You recently discovered that your employer has been misclassifying you and others as independent contractors, even though they control your hours, require daily check-ins, and provide all your equipment. Because of this, you’ve been denied overtime, benefits, and employer-paid taxes.
-
-You bring it up to HR, but they dismiss your concerns, saying the classification is standard company policy. Later that week, your access to company systems is revoked, and you receive a termination email with no explanation.
-
-You suspect this was retaliation for speaking up.
+    prompt: `You're a college RA in Vermont and find a student's laptop open during a routine dorm check. On the screen is what appears to be illegal file sharing software and a folder labeled “exam answers.” You’re unsure whether the search would violate privacy or if you're required to report it.
 
 What do you do?`,
-    date: "2025-04-18",
+    date: "2025-05-03",
   },
   {
-    prompt: `You're a college student in Illinois who just started selling custom T-shirts on Etsy. A few designs parody well-known logos from major brands, tweaking them humorously. One day, you receive a cease-and-desist letter from a major corporation, accusing you of trademark infringement and threatening legal action if you don't remove the products and compensate for damages.
+    prompt: `You’re a contractor in Utah, and during a renovation project you find what looks like asbestos behind an old wall. Your client insists you keep working and “pretend you didn’t see it” because reporting it would halt construction and increase costs.
 
-You thought parody was protected under fair use, so you’re surprised. The Etsy listing is already taken down, and your account is under review.
+You’re worried about health and liability.
 
 What do you do?`,
-    date: "2025-04-19",
+    date: "2025-05-04",
   },
   {
-    prompt: `You’re a tenant in New York City, renting a small apartment under a 12-month lease. One month, your landlord shows up unannounced, lets himself in with a spare key while you’re home, and says he’s just “checking the plumbing.” He doesn’t give notice or ask permission, and this happens twice more over the next few weeks.
+    prompt: `You're a social media manager in Louisiana and are asked by your boss to log into a former employee’s company account to delete “unprofessional” DMs they sent while employed. The former employee is in the process of suing the company for wrongful termination.
 
-You tell him it’s not okay, but he insists he has the right to inspect the property whenever he wants. He then threatens to raise your rent or terminate your lease early if you “make a fuss.”
-
-You're feeling uncomfortable and unsafe.
+You're not sure if this is legal—or ethical.
 
 What do you do?`,
-    date: "2025-04-20",
+    date: "2025-05-05",
   },
   {
-    prompt: `You’re an aspiring photographer in Oregon who loves using drones to capture scenic footage. One weekend, you fly your drone over a coastal wedding at a public beach. You stay at a reasonable distance but record sweeping shots of the area, including parts of the ceremony. You later post a short video montage to your YouTube channel.
+    prompt: `You’re a delivery driver in Kentucky using your own vehicle. One day, your manager asks you to keep working past your legal shift hours to finish a large order. When you say you’re too tired, they threaten to dock your pay and give you fewer shifts.
 
-A week later, you receive a letter from an attorney representing the couple, stating you violated their privacy and are being threatened with a lawsuit. They demand you take the video down and pay damages for emotional distress and unauthorized use of their likeness.
+You’re worried about safety and labor law violations.
 
 What do you do?`,
-    date: "2025-04-21",
+    date: "2025-05-06",
   },
   {
-    prompt: `You're a freelance journalist based in Washington state. You recently wrote an investigative piece on a local government official’s alleged misconduct, relying heavily on anonymous sources. The article goes viral, and soon you receive a subpoena demanding you reveal your sources in a defamation lawsuit filed by the official.
+    prompt: `You’re a nonprofit intern in Minnesota, helping compile a public report. Your supervisor tells you to “massage the data” to make the organization’s impact look better than it really is. They imply it’s just “PR,” not deception.
 
-You're worried about legal consequences if you don’t comply, but revealing the sources could destroy your credibility—and their lives.
+You're uncomfortable falsifying numbers but unsure if it's illegal.
 
 What do you do?`,
-    date: "2025-04-22",
+    date: "2025-05-07",
   },
   {
-    prompt: `You’re an Uber driver in Nevada. One evening, a passenger leaves a backpack in your car. You try contacting them via the app, but get no response. Later, you open the bag to look for ID and find what appears to be a large amount of cash and a suspicious white powder.
+    prompt: `You’re a wedding photographer in New Mexico. After an event, the couple asks for all raw photos. Your contract says only edited images will be delivered, and the raws remain your intellectual property. They threaten to post negative reviews unless you hand over everything.
 
-Before you can decide what to do, someone starts messaging you from a blocked number asking for the bag back—no questions asked.
+You’re worried about damage to your reputation.
 
 What do you do?`,
-    date: "2025-04-23",
+    date: "2025-05-08",
   },
   {
-    prompt: `You're a schoolteacher in Georgia, and one of your students confides in you about witnessing something potentially criminal at home. You’re concerned for their safety, but they beg you not to tell anyone, fearing things will get worse.
+    prompt: `You're an accountant in Idaho and discover your employer has been quietly misclassifying political donations under “community outreach.” You flag it to your boss, who tells you not to worry about it and just “focus on the numbers.”
 
-You’re unsure whether this qualifies as mandated reporting under state law, and your principal advises you to “wait and see.”
+You’re unsure whether you're obligated to report this.
 
 What do you do?`,
-    date: "2025-04-24",
+    date: "2025-05-09",
   },
   {
-    prompt: `You’re a dog walker in Colorado and recently posted videos of your clients’ dogs doing tricks on your TikTok. One of your videos goes viral, gaining sponsorship offers. But a client contacts you angrily, saying you never got their consent to post footage of their dog and that you’re using their pet for personal gain.
+    prompt: `You’re a real estate agent in South Carolina. During a home tour, a client makes discriminatory comments and asks you to only show them homes in “white neighborhoods.” You're uncomfortable, but fear losing your commission if you push back.
 
-They’re threatening to sue unless you take it down and split the revenue.
+You wonder what your legal obligations are.
 
 What do you do?`,
-    date: "2025-04-25",
+    date: "2025-05-10",
   },
   {
-    prompt: `You’re a barista in a busy Los Angeles café. One day, a regular customer leaves behind a flash drive. You plug it into the café’s computer to check for contact info and accidentally discover confidential corporate documents that seem to implicate a major company in environmental violations.
+    prompt: `You’re a high school teacher in Alaska. A student writes a concerning essay implying they may harm themselves. When you bring it up to the school counselor, they say the student’s grades are fine and not to overreact.
 
-You’re torn between returning the drive quietly or going public.
+You’re worried for their safety and unsure what action you're allowed to take.
 
 What do you do?`,
-    date: "2025-04-26",
+    date: "2025-05-11",
   },
   {
-    prompt: `You run a fitness coaching business in Pennsylvania, offering virtual classes. A client claims they were injured while following your workout and is demanding compensation. You had them sign a digital waiver, but they argue it’s unenforceable because it wasn’t notarized or clearly worded.
-
-They’re threatening legal action unless you settle.
+    prompt: `You’re a bartender in Rhode Island. A clearly intoxicated customer insists on driving home. Your manager says to keep serving them—they're a regular and tip well. You consider taking their keys or calling police but worry about overstepping.
 
 What do you do?`,
-    date: "2025-04-27",
+    date: "2025-05-12",
   },
   {
-    prompt: `You work part-time at a retail store in Michigan. One day, your manager asks you to clock in a co-worker who’s running late, saying “it’s no big deal.” You do it, but later, the HR department finds out and you’re the one under investigation for timesheet fraud.
-
-You explain the situation, but they say policy is policy.
+    prompt: `You work for a tech startup in Washington D.C. During a product launch, you're told to exclude accessibility features from the demo because they slow down the app. You know this violates internal policy and likely federal disability law.
 
 What do you do?`,
-    date: "2025-04-28",
+    date: "2025-05-13",
   },
   {
-    prompt: `You’re a makeup artist in North Carolina with a popular Instagram following. A beauty brand sends you free products and asks you to post positive reviews, but never mentions a contract or payment. You post a glowing review—and weeks later find out the product is being recalled due to a harmful ingredient.
+    prompt: `You’re a substitute teacher in Nevada. A student shows you a text thread suggesting their classmate is being abused at home. You want to report it, but administration tells you substitutes aren’t “mandated reporters.”
 
-Now followers are blaming you, and the brand has ghosted you.
+You’re unsure whether this is true—or if you should report anyway.
 
 What do you do?`,
-    date: "2025-04-29",
+    date: "2025-05-14",
   },
   {
-    prompt: `You’re a grad student in Massachusetts researching AI ethics. You find an internal document from a major tech company online that wasn’t meant for public release. It contains data that could be groundbreaking for your thesis—and damaging to the company.
+    prompt: `You’re a property manager in Wisconsin and overhear your maintenance staff making discriminatory jokes about tenants. When you bring it up to HR, they laugh it off and say “that’s just their sense of humor.”
 
-Publishing it could spark important debate, but you’re unsure about the legal risks of using or citing it.
+You’re concerned it could escalate into a legal liability.
 
 What do you do?`,
-    date: "2025-04-30",
+    date: "2025-05-15",
+  },
+  {
+    prompt: `You’re an app developer in Georgia. A client asks you to build a feature that secretly tracks users’ locations without asking for permission. You push back, but they claim it’s legal if the users “agree” by installing the app.
+
+You're not so sure.
+
+What do you do?`,
+    date: "2025-05-16",
+  },
+  {
+    prompt: `You’re a freelance editor in Hawaii. A self-published author hires you to help with a memoir, but you notice several passages that clearly defame a real person without evidence. The author says “that’s their problem.”
+
+You’re worried about being legally liable as the editor.
+
+What do you do?`,
+    date: "2025-05-17",
+  },
+  {
+    prompt: `You work for a manufacturing company in Indiana. You discover your employer is dumping waste in violation of EPA guidelines. When you raise concerns, you're told to “be a team player” or risk your job.
+
+You want to report it but fear retaliation.
+
+What do you do?`,
+    date: "2025-05-18",
+  },
+  {
+    prompt: `You're a tattoo artist in North Dakota. A client asks for a tattoo that includes hate speech. You’re uncomfortable doing it, but they argue it’s protected free expression and threaten to sue if you refuse.
+
+You’re not sure if you’re allowed to say no.
+
+What do you do?`,
+    date: "2025-05-19",
+  },
+  {
+    prompt: `You're a high school coach in New Jersey. A parent offers to “donate” new gear to the team if you guarantee their child a starting spot. You politely decline, but they escalate—calling administrators and threatening to go to the media.
+
+What do you do?`,
+    date: "2025-05-20",
+  },
+  {
+    prompt: `You’re an event organizer in Montana. A speaker at your upcoming panel is accused of serious misconduct. There’s no official legal action, but the allegations are spreading online. The client wants you to keep the speaker or risk breaching the contract.
+
+What do you do?`,
+    date: "2025-05-21",
+  },
+  {
+    prompt: `You're a delivery worker in Arkansas. Your employer uses facial recognition to monitor drivers but doesn’t inform employees or customers. You only found out through a colleague—and now you're worried it’s violating state or federal privacy laws.
+
+What do you do?`,
+    date: "2025-05-22",
+  },
+  {
+    prompt: `You're a bookstore owner in Connecticut. A customer asks you to remove LGBTQ+ books from your display. When you refuse, they film your response and post it online, falsely claiming you discriminated against them. You’re getting threats and bad reviews.
+
+What do you do?`,
+    date: "2025-05-23",
+  },
+  {
+    prompt: `You’re a software tester in Delaware and accidentally gain access to a list of employees' salaries, revealing massive wage gaps. When you mention it to a coworker, HR accuses you of breaching confidentiality—even though you never signed an NDA.
+
+You’re unsure what rights you have.
+
+What do you do?`,
+    date: "2025-05-24",
+  },
+  {
+    prompt: `You're an independent contractor in Wyoming. A company hires you and gives you detailed work instructions, strict hours, and requires daily check-ins. But they insist you’re “not an employee,” so you’re denied benefits.
+
+You're starting to wonder if this is legal misclassification.
+
+What do you do?`,
+    date: "2025-05-25",
+  },
+  {
+    prompt: `You’re a college intern at a biotech firm in Nebraska. You witness a lead researcher falsifying lab results to secure grant funding. You’re just an intern and fear the consequences of whistleblowing.
+
+What do you do?`,
+    date: "2025-05-26",
+  },
+  {
+    prompt: `You're a part-time cashier in Maine. A customer drops a wallet and walks away. You give it to your manager, but later hear they kept the cash inside. You're not sure if you should report it—or to whom.
+
+What do you do?`,
+    date: "2025-05-27",
+  },
+  {
+    prompt: `You're a paralegal in West Virginia. Your supervising attorney asks you to shred documents that were requested in a pending subpoena. You ask twice if they’re sure, and they say it’s “privileged anyway.”
+
+You’re unsure if complying could get *you* in trouble.
+
+What do you do?`,
+    date: "2025-05-28",
+  },
+  {
+    prompt: `You're a librarian in New Hampshire. A local group demands the removal of several books they say are “inappropriate.” They claim they’ll sue the library if you don’t comply. The board is panicking and asking for your input.
+
+What do you do?`,
+    date: "2025-05-29",
+  },
+  {
+    prompt: `You work at a biotech lab in Iowa. A journalist asks you for anonymous comments on a product you believe is unsafe. Your contract has a strict non-disclosure clause, but you feel morally compelled to speak up.
+
+What do you do?`,
+    date: "2025-05-30",
+  },
+  {
+    prompt: `You're a gig worker in Tennessee using multiple apps to make ends meet. One app suddenly bans you, claiming “fraudulent activity,” with no explanation. You’ve lost your main source of income—and there's no clear appeals process.
+
+What do you do?`,
+    date: "2025-05-31",
   },
 ];
+
 
 function getTodaysPrompt() {
   const today = new Date();
