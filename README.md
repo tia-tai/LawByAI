@@ -1,0 +1,1 @@
+**Law by AI** is a generative AI model that educates people on the law and increases their understanding of the ways it governs the world. It features 2 gamemodes: a daily puzzle, similar to the popular game Wordle where users have to respond to an AI's prompt and find the best legal solution, and freeplay, where users can practice the law in preparation for the daily puzzles.
