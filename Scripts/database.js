@@ -16,7 +16,7 @@ import {
 import { GoogleGenerativeAI } from "https://cdn.jsdelivr.net/npm/@google/generative-ai/+esm";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBKJT-A3KHH_hoJV-6-84mO3vJ3Rh4wzW4",
+  apiKey: "AIzaSyC8d-9lOYZ0GUZJdcSq5VmAjxl2F8w7PJQ",
   authDomain: "iste-d7d9f.firebaseapp.com",
   projectId: "iste-d7d9f",
   storageBucket: "iste-d7d9f.firebasestorage.app",
@@ -263,7 +263,7 @@ const weeklyPrompts = [
 You worry that staying silent makes you complicit—and that your name is on the project.
 
 What do you do?`,
-    date: "2025-05-01",
+    date: "2025-10-26",
   },
   {
     prompt: `You're a nurse in Ohio working at a private clinic. A patient confides that they’re undocumented and afraid to seek further medical care. Your supervisor later asks for that patient’s file “for reporting purposes,” but you suspect it’s related to their immigration status—not medical care.
@@ -271,13 +271,13 @@ What do you do?`,
 You fear they’ll be reported if you comply.
 
 What do you do?`,
-    date: "2025-05-02",
+    date: "2025-10-27",
   },
   {
     prompt: `You're a college RA in Vermont and find a student's laptop open during a routine dorm check. On the screen is what appears to be illegal file sharing software and a folder labeled “exam answers.” You’re unsure whether the search would violate privacy or if you're required to report it.
 
 What do you do?`,
-    date: "2025-05-03",
+    date: "2025-10-28",
   },
   {
     prompt: `You’re a contractor in Utah, and during a renovation project you find what looks like asbestos behind an old wall. Your client insists you keep working and “pretend you didn’t see it” because reporting it would halt construction and increase costs.
@@ -285,7 +285,7 @@ What do you do?`,
 You’re worried about health and liability.
 
 What do you do?`,
-    date: "2025-05-04",
+    date: "2025-10-29",
   },
   {
     prompt: `You're a social media manager in Louisiana and are asked by your boss to log into a former employee’s company account to delete “unprofessional” DMs they sent while employed. The former employee is in the process of suing the company for wrongful termination.
@@ -293,7 +293,7 @@ What do you do?`,
 You're not sure if this is legal—or ethical.
 
 What do you do?`,
-    date: "2025-05-05",
+    date: "2025-10-30",
   },
   {
     prompt: `You’re a delivery driver in Kentucky using your own vehicle. One day, your manager asks you to keep working past your legal shift hours to finish a large order. When you say you’re too tired, they threaten to dock your pay and give you fewer shifts.
@@ -301,7 +301,7 @@ What do you do?`,
 You’re worried about safety and labor law violations.
 
 What do you do?`,
-    date: "2025-05-06",
+    date: "2025-10-31",
   },
   {
     prompt: `You’re a nonprofit intern in Minnesota, helping compile a public report. Your supervisor tells you to “massage the data” to make the organization’s impact look better than it really is. They imply it’s just “PR,” not deception.
@@ -309,7 +309,7 @@ What do you do?`,
 You're uncomfortable falsifying numbers but unsure if it's illegal.
 
 What do you do?`,
-    date: "2025-05-07",
+    date: "2025-11-01",
   },
   {
     prompt: `You’re a wedding photographer in New Mexico. After an event, the couple asks for all raw photos. Your contract says only edited images will be delivered, and the raws remain your intellectual property. They threaten to post negative reviews unless you hand over everything.
@@ -317,7 +317,7 @@ What do you do?`,
 You’re worried about damage to your reputation.
 
 What do you do?`,
-    date: "2025-05-08",
+    date: "2025-11-02",
   },
   {
     prompt: `You're an accountant in Idaho and discover your employer has been quietly misclassifying political donations under “community outreach.” You flag it to your boss, who tells you not to worry about it and just “focus on the numbers.”
@@ -325,7 +325,7 @@ What do you do?`,
 You’re unsure whether you're obligated to report this.
 
 What do you do?`,
-    date: "2025-05-09",
+    date: "2025-11-03",
   },
   {
     prompt: `You’re a real estate agent in South Carolina. During a home tour, a client makes discriminatory comments and asks you to only show them homes in “white neighborhoods.” You're uncomfortable, but fear losing your commission if you push back.
@@ -333,7 +333,7 @@ What do you do?`,
 You wonder what your legal obligations are.
 
 What do you do?`,
-    date: "2025-05-10",
+    date: "2025-11-04",
   },
   {
     prompt: `You’re a high school teacher in Alaska. A student writes a concerning essay implying they may harm themselves. When you bring it up to the school counselor, they say the student’s grades are fine and not to overreact.
@@ -341,19 +341,19 @@ What do you do?`,
 You’re worried for their safety and unsure what action you're allowed to take.
 
 What do you do?`,
-    date: "2025-05-11",
+    date: "2025-11-05",
   },
   {
     prompt: `You’re a bartender in Rhode Island. A clearly intoxicated customer insists on driving home. Your manager says to keep serving them—they're a regular and tip well. You consider taking their keys or calling police but worry about overstepping.
 
 What do you do?`,
-    date: "2025-05-12",
+    date: "2025-11-06",
   },
   {
     prompt: `You work for a tech startup in Washington D.C. During a product launch, you're told to exclude accessibility features from the demo because they slow down the app. You know this violates internal policy and likely federal disability law.
 
 What do you do?`,
-    date: "2025-05-13",
+    date: "2025-11-07",
   },
   {
     prompt: `You’re a substitute teacher in Nevada. A student shows you a text thread suggesting their classmate is being abused at home. You want to report it, but administration tells you substitutes aren’t “mandated reporters.”
@@ -361,7 +361,7 @@ What do you do?`,
 You’re unsure whether this is true—or if you should report anyway.
 
 What do you do?`,
-    date: "2025-05-14",
+    date: "2025-11-08",
   },
   {
     prompt: `You’re a property manager in Wisconsin and overhear your maintenance staff making discriminatory jokes about tenants. When you bring it up to HR, they laugh it off and say “that’s just their sense of humor.”
@@ -369,7 +369,7 @@ What do you do?`,
 You’re concerned it could escalate into a legal liability.
 
 What do you do?`,
-    date: "2025-05-15",
+    date: "2025-11-09",
   },
   {
     prompt: `You’re an app developer in Georgia. A client asks you to build a feature that secretly tracks users’ locations without asking for permission. You push back, but they claim it’s legal if the users “agree” by installing the app.
@@ -377,7 +377,7 @@ What do you do?`,
 You're not so sure.
 
 What do you do?`,
-    date: "2025-05-16",
+    date: "2025-11-10",
   },
   {
     prompt: `You’re a freelance editor in Hawaii. A self-published author hires you to help with a memoir, but you notice several passages that clearly defame a real person without evidence. The author says “that’s their problem.”
@@ -385,7 +385,7 @@ What do you do?`,
 You’re worried about being legally liable as the editor.
 
 What do you do?`,
-    date: "2025-05-17",
+    date: "2025-11-11",
   },
   {
     prompt: `You work for a manufacturing company in Indiana. You discover your employer is dumping waste in violation of EPA guidelines. When you raise concerns, you're told to “be a team player” or risk your job.
@@ -393,7 +393,7 @@ What do you do?`,
 You want to report it but fear retaliation.
 
 What do you do?`,
-    date: "2025-05-18",
+    date: "2025-11-12",
   },
   {
     prompt: `You're a tattoo artist in North Dakota. A client asks for a tattoo that includes hate speech. You’re uncomfortable doing it, but they argue it’s protected free expression and threaten to sue if you refuse.
@@ -401,31 +401,31 @@ What do you do?`,
 You’re not sure if you’re allowed to say no.
 
 What do you do?`,
-    date: "2025-05-19",
+    date: "2025-11-13",
   },
   {
     prompt: `You're a high school coach in New Jersey. A parent offers to “donate” new gear to the team if you guarantee their child a starting spot. You politely decline, but they escalate—calling administrators and threatening to go to the media.
 
 What do you do?`,
-    date: "2025-05-20",
+    date: "2025-11-14",
   },
   {
     prompt: `You’re an event organizer in Montana. A speaker at your upcoming panel is accused of serious misconduct. There’s no official legal action, but the allegations are spreading online. The client wants you to keep the speaker or risk breaching the contract.
 
 What do you do?`,
-    date: "2025-05-21",
+    date: "2025-11-15",
   },
   {
     prompt: `You're a delivery worker in Arkansas. Your employer uses facial recognition to monitor drivers but doesn’t inform employees or customers. You only found out through a colleague—and now you're worried it’s violating state or federal privacy laws.
 
 What do you do?`,
-    date: "2025-05-22",
+    date: "2025-11-16",
   },
   {
     prompt: `You're a bookstore owner in Connecticut. A customer asks you to remove LGBTQ+ books from your display. When you refuse, they film your response and post it online, falsely claiming you discriminated against them. You’re getting threats and bad reviews.
 
 What do you do?`,
-    date: "2025-05-23",
+    date: "2025-11-17",
   },
   {
     prompt: `You’re a software tester in Delaware and accidentally gain access to a list of employees' salaries, revealing massive wage gaps. When you mention it to a coworker, HR accuses you of breaching confidentiality—even though you never signed an NDA.
@@ -433,7 +433,7 @@ What do you do?`,
 You’re unsure what rights you have.
 
 What do you do?`,
-    date: "2025-05-24",
+    date: "2025-11-18",
   },
   {
     prompt: `You're an independent contractor in Wyoming. A company hires you and gives you detailed work instructions, strict hours, and requires daily check-ins. But they insist you’re “not an employee,” so you’re denied benefits.
@@ -441,19 +441,19 @@ What do you do?`,
 You're starting to wonder if this is legal misclassification.
 
 What do you do?`,
-    date: "2025-05-25",
+    date: "2025-11-19",
   },
   {
     prompt: `You’re a college intern at a biotech firm in Nebraska. You witness a lead researcher falsifying lab results to secure grant funding. You’re just an intern and fear the consequences of whistleblowing.
 
 What do you do?`,
-    date: "2025-05-26",
+    date: "2025-11-20",
   },
   {
     prompt: `You're a part-time cashier in Maine. A customer drops a wallet and walks away. You give it to your manager, but later hear they kept the cash inside. You're not sure if you should report it—or to whom.
 
 What do you do?`,
-    date: "2025-05-27",
+    date: "2025-11-21",
   },
   {
     prompt: `You're a paralegal in West Virginia. Your supervising attorney asks you to shred documents that were requested in a pending subpoena. You ask twice if they’re sure, and they say it’s “privileged anyway.”
@@ -461,25 +461,25 @@ What do you do?`,
 You’re unsure if complying could get *you* in trouble.
 
 What do you do?`,
-    date: "2025-05-28",
+    date: "2025-11-22",
   },
   {
     prompt: `You're a librarian in New Hampshire. A local group demands the removal of several books they say are “inappropriate.” They claim they’ll sue the library if you don’t comply. The board is panicking and asking for your input.
 
 What do you do?`,
-    date: "2025-05-29",
+    date: "2025-11-23",
   },
   {
     prompt: `You work at a biotech lab in Iowa. A journalist asks you for anonymous comments on a product you believe is unsafe. Your contract has a strict non-disclosure clause, but you feel morally compelled to speak up.
 
 What do you do?`,
-    date: "2025-05-30",
+    date: "2025-11-24",
   },
   {
     prompt: `You're a gig worker in Tennessee using multiple apps to make ends meet. One app suddenly bans you, claiming “fraudulent activity,” with no explanation. You’ve lost your main source of income—and there's no clear appeals process.
 
 What do you do?`,
-    date: "2025-05-31",
+    date: "2025-11-25",
   },
 ];
 
@@ -567,7 +567,7 @@ window.sendMessage = async function () {
       response = getTodaysPrompt();
     } else {
       const genAI = new GoogleGenerativeAI(
-        "AIzaSyAm6dOUWqVzfDnnWPWgBwtERjkLT44ekYQ"
+        "AIzaSyC8d-9lOYZ0GUZJdcSq5VmAjxl2F8w7PJQ"
       );
       const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
 

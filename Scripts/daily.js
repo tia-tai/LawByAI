@@ -12,3 +12,4 @@ userInput.addEventListener("input", () => {
   const max = userInput.getAttribute("maxlength");
   charCount.textContent = `${userInput.value.length} / ${max}`;
 });
+
