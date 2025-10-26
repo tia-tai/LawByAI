@@ -16,13 +16,13 @@ import {
 import { GoogleGenerativeAI } from "https://cdn.jsdelivr.net/npm/@google/generative-ai/+esm";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCVSIyd87yBjvyqEaBUJdPChDvgtm5YzXc",
-  authDomain: "iste2-1a0da.firebaseapp.com",
-  projectId: "iste2-1a0da",
-  storageBucket: "iste2-1a0da.firebasestorage.app",
-  messagingSenderId: "887233895961",
-  appId: "1:887233895961:web:622601660f71749c8f1488",
-  measurementId: "G-8PSN1E8NH9"
+  apiKey: "AIzaSyBKJT-A3KHH_hoJV-6-84mO3vJ3Rh4wzW4",
+  authDomain: "iste-d7d9f.firebaseapp.com",
+  projectId: "iste-d7d9f",
+  storageBucket: "iste-d7d9f.firebasestorage.app",
+  messagingSenderId: "1053664417480",
+  appId: "1:1053664417480:web:fc3e94d1f086d6844b37fd",
+  measurementId: "G-VFPY8G17P3"
 };
 
 const app = initializeApp(firebaseConfig);
